@@ -1,0 +1,8 @@
+xgboost
+scikit-image
+opencv-python
+h5py
+matplotlib
+scikit-learn
+numpy
+pillow

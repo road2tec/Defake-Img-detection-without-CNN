@@ -1,0 +1,41 @@
+# Large dataset folders
+real_vs_fake/
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Large dataset files
+*.csv
+
+# Environment files
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Model files (if large, uncomment if needed)
+# *.h5
+# *.pkl
+
+# Uploaded files
+uploads/

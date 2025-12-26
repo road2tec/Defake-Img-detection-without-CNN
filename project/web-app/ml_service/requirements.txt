@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+numpy
+opencv-python
+xgboost
+scikit-image
+scikit-learn
+h5py
