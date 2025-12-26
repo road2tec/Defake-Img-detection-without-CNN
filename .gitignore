@@ -1,6 +1,9 @@
 # Large dataset folders
 real_vs_fake/
 
+# Debug images
+debug_image.jpg
+
 # Dependencies
 node_modules/
 __pycache__/
