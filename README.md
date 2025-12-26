@@ -54,21 +54,14 @@ npm install
 npm run dev
 ```
 
-## 🔍 How It Works (Tiered Hybrid Detection V2)
+## 🔍 How It Works
 
-The system employs a sophisticated 3-tier detection pipeline to ensure high accuracy against modern GAN and Diffusion-based AI images:
+The system uses a robust multi-stage analysis process to distinguish between real and AI-generated images:
 
-1.  **Tier 1: Texture Sharpness Analysis (Laplacian Variance)**
-    -   AI-generated images often suffer from "unnatural smoothness."
-    -   **Rule**: If variance is **< 100**, the image is immediately flagged as **ABSOLUTE FAKE (98% confidence)**.
-
-2.  **Tier 2: suspicious texture + Model Probability**
-    -   Moderate smoothness combined with slight model suspicion.
-    -   **Rule**: If variance is **< 350** AND XGBoost probability is **> 0.20**, it is flagged as **AI-GENERATED (85% confidence)**.
-
-3.  **Tier 3: XGBoost Booster Model**
-    -   A gradient boosted model trained on grayscale signal features.
-    -   **Rule**: If XGBoost probability exceeds the **Optimal Threshold (e.g., 0.42)**, it is classified as **AI-GENERATED**.
+1.  **Image Preprocessing**: Uploaded images are resized and converted to optimize feature extraction.
+2.  **Feature Extraction**: The system analyzes complex patterns, texture descriptors, and grayscale signal components.
+3.  **Advanced Classification**: A high-performance XGBoost model processes these features to determine the probability of an image being AI-generated.
+4.  **Hybrid Verification**: The model's findings are integrated with texture analysis metrics to provide a final classification with a confidence score.
 
 ## 🛠️ Technology Stack
 
